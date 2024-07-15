@@ -65,7 +65,7 @@ const LoginScreen = ({navigation}) => {
         </View>
 
         <View style={styles.pv30}>
-          <Button onPress={() => navigation.replace(routes.tab)}>Login</Button>
+          <Button onPress={() => navigation.navigate(routes.tab)}>Login</Button>
         </View>
 
         <View style={styles.texthead}>

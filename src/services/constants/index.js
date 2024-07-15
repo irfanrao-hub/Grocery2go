@@ -17,6 +17,13 @@ export const routes = {
     forgetpasword:'forgetpasword',
     resetpasword:'resetpasword',
     optscreen:'optscreen',
+    tab: 'tabNavigator',
+    dashboard: 'dashboard',
+    tracking: 'tracking',
+    list: 'list',
+    shop: 'shop',
+    profile: 'profile',
+
 }
 
 export const loaderStyles = {

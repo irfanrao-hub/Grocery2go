@@ -20,6 +20,18 @@ const appIcons = {
     google: require(`${iconUrl}/google.png`),
     arrowleft: require(`${iconUrl}/arrowleft.png`),
     addres: require(`${iconUrl}/addres.png`),
+    arrowdown: require(`${iconUrl}/arrowdown.png`),
+    location: require(`${iconUrl}/location.png`),
+    Buy: require(`${iconUrl}/Buy.png`),
+    track: require(`${iconUrl}/track.png`),
+    list: require(`${iconUrl}/list.png`),
+    hometab: require(`${iconUrl}/hometab.png`),
+    profileTab: require(`${iconUrl}/profileTab.png`),
+
+
+
+
+
 
 
 

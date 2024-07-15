@@ -54,7 +54,6 @@ justifyContent:'center'
     marginTop: widthPixel(30),
     height: widthPixel(24),
     resizeMode: 'contain',
-    backgroundColor:'red'
 
   },
   logo: {
