@@ -27,6 +27,14 @@ const appIcons = {
     list: require(`${iconUrl}/list.png`),
     hometab: require(`${iconUrl}/hometab.png`),
     profileTab: require(`${iconUrl}/profileTab.png`),
+    Search: require(`${iconUrl}/Search.png`),
+    Notification: require(`${iconUrl}/Notification.png`),
+    Heart: require(`${iconUrl}/Heart.png`),
+    apple: require(`${iconUrl}/apple.png`),
+
+
+
+
 
 
 

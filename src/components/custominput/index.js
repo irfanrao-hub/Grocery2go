@@ -42,7 +42,7 @@ export const CustomInput = ({
 }) => {
   
   return (
-    <View style={{...styles.formInput, width: width}}>
+    <View style={{...styles.formInput, width: width, height: height}}>
       <View
         style={{
           ...styles.input,
@@ -52,7 +52,7 @@ export const CustomInput = ({
           backgroundColor: backgroundColor,
           elevation: elevation,
         }}>
-        {/* <Image source={leftIcon} style={styles.leftIcon} /> */}
+        <Image source={leftIcon} style={styles.leftIcon} />
         <TouchableOpacity
           style={{flex: 1}}
           onPress={() => rightIcon && onPressIcon()}>
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
   leftIcon: {
     width: widthPixel(24),
     height: widthPixel(24),
-    marginRight: widthPixel(12),
+    marginRight: widthPixel(10),
     resizeMode: 'contain',
   },
   eyeshow: {
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
   inputTextStyle: {
     width: widthPixel(390),
     height:60,
-    fontSize: 15,
+    fontSize: 14,
     fontFamily: fontFamily.appTextRegular,
     color: colors.lightBlack,
     

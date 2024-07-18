@@ -10,6 +10,7 @@ export const colors = {
   dividerColor: '#DADADA',
   dividerColor2: '#C7C7C7',
   lightskyblue:'#C8D5E0',
+  skyblue:'#C2D0DC',
   green: '#4CC26C',
   greyLight: '#E9E9E9',
   errorColor: '#FF0000',

@@ -3,7 +3,7 @@ import {StyleSheet, Image, View, TouchableOpacity} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {appIcons, colors} from '../../utilities';
 import {heightPixel, hp, routes, widthPixel} from '../../constants';
-import { Dashboard, List, Ordertracking,  Shop} from '../../../screens/appFlow';
+import {Dashboard, List, Ordertracking, Shop} from '../../../screens/appFlow';
 import Profile from '../../../screens/appFlow/profile';
 const Tab = createBottomTabNavigator();
 
@@ -20,8 +20,7 @@ const TabButton = props => {
   return (
     <TouchableOpacity onPress={onPress} style={[styles.container]}>
       <View style={[styles.btn]}>
-        <View style={{alignItems: 'center',justifyContent:'center'}}>
-          {focused && <View />}
+        <View style={{alignItems: 'center', justifyContent: 'center'}}>
           <Image
             source={item.icon}
             style={[
@@ -29,17 +28,16 @@ const TabButton = props => {
               {tintColor: focused ? colors.theme : colors.lightBlack},
             ]}
           />
-          <View style={styles.tabbottom}>
-          </View>
+          {focused && <View style={styles.tabbottom}></View>}
         </View>
       </View>
-
     </TouchableOpacity>
   );
 };
 export function TabNavigator() {
   return (
-    <Tab.Navigator initialRouteName={routes.dashboard}
+    <Tab.Navigator
+      initialRouteName={routes.dashboard}
       screenOptions={{
         headerShown: false,
         tabBarStyle: styles.barStyle,
@@ -67,7 +65,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     elevation: 0,
-    borderRadius:8,
+    borderRadius: 8,
   },
   tabIcon: {
     width: 32,
@@ -85,13 +83,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 20,
   },
-  tabbottom:{
-    width:widthPixel(24),
-    height:heightPixel(10),
-    backgroundColor:colors.theme,
-    // paddingTop:20,
-    borderTopLeftRadius:100,
-    borderTopRightRadius:100,
-    marginTop:10,
-  }
+  tabbottom: {
+    width: widthPixel(24),
+    height: heightPixel(8),
+    backgroundColor: colors.theme,
+    borderTopLeftRadius: 100,
+    borderTopRightRadius: 100,
+  },
 });
